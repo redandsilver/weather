@@ -13,7 +13,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
-@Transactional
+@Transactional // test코드에서 transactional은 다 롤백처리를 해준다.
 class JpaMemoRepositoryTest {
     @Autowired
     JpaMemoRepository jpaMemoRepository;
